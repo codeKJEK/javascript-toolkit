@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>codeKJEK Vanilla JavaScript Toolkit</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav id="nav">
+        <div class="container">
+          <!-- skip to main content -->
+          <div class="nav-heading">
+            <!-- logo -->
+            <a href="#home" class="logo"> codeKJEK </a>
+            <!-- toggle menu button -->
+            <button class="toggle-menu">
+              menu <span><i class="fas fa-bars"></i></span>
+            </button>
+          </div>
+          <!-- navigation -->
+          <div class="nav-container">
+            <ul class="nav-list list">
+              <!-- nav links -->
+              <li><a href="#home">home</a></li>
+              <li><a href="#about">about</a></li>
+              <li><a href="#contact">contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="banner" id="home">
+        <div class="container">
+          <video controls muted autoplay loop class="video-container">
+            <source
+              src="./Particle_Wave_4K_Motion_Background_Loop.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <!-- page heading -->
+          <h1>vanilla javascript</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui,
+            dignissimos?
+          </p>
+          <a href="#about" class="btn-white">explore projects</a>
+        </div>
+      </section>
+    </header>
+    <main id="main-content">
+      <section id="about" class="test-section">
+        <h2>about</h2>
+      </section>
+      <section id="contact" class="test-section">
+        <h2>contact</h2>
+      </section>
+    </main>
+    <footer></footer>
+    <a class="top-link" href="#home">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+    <script src="nav.js"></script>
+  </body>
+</html>
