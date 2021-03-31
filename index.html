@@ -13,59 +13,92 @@
     />
   </head>
   <body>
-    <header>
+    <header id="home">
       <nav id="nav">
         <div class="container">
           <!-- skip to main content -->
           <div class="nav-heading">
             <!-- logo -->
-            <a href="#home" class="logo"> codeKJEK </a>
+            <a href="#home" class="logo">code<span>KJEK</span> </a>
             <!-- toggle menu button -->
             <button class="toggle-menu">
-              menu <span><i class="fas fa-bars"></i></span>
+              menu&nbsp;<span><i class="fas fa-bars"></i></span> 
             </button>
           </div>
           <!-- navigation -->
           <div class="nav-container">
             <ul class="nav-list list">
               <!-- nav links -->
-              <li><a href="#home">home</a></li>
-              <li><a href="#about">about</a></li>
-              <li><a href="#contact">contact</a></li>
+              <li><a href="#timer" class="scroll-link">countdown timer</a></li>
+              <li><a href="#modal" class="scroll-link">simple modal</a></li>
+              <li><a href="#tabs" class="scroll-link">content tabs</a></li>
+              <li><a href="#faq" class="scroll-link">FAQ section</a></li>
+              <li><a href="#reviews" class="scroll-link">reviews section</a></li>
+              <li><a href="#dynamic" class="scroll-link">dynamic content</a></li>
             </ul>
           </div>
         </div>
       </nav>
-      <section class="banner" id="home">
+      <section class="banner">
         <div class="container">
-          <video controls muted autoplay loop class="video-container">
-            <source
-              src="./Particle_Wave_4K_Motion_Background_Loop.mp4"
-              type="video/mp4"
-            />
-          </video>
           <!-- page heading -->
           <h1>vanilla javascript</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui,
             dignissimos?
           </p>
-          <a href="#about" class="btn-white">explore projects</a>
+          <a href="#timer" class="btn-white scroll-link">explore projects</a>
         </div>
       </section>
+      <video muted autoplay loop class="video-container">
+        <source
+          src="./Particle_Wave_4K_Motion_Background_Loop.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <button class="switch-btn">
+        <span> play </span>
+        <span> pause </span>
+        <span class="switch"> </span>
+      </button>
     </header>
     <main id="main-content">
-      <section id="about" class="test-section">
-        <h2>about</h2>
+      <!-- single item -->
+      <section id="timer" class="test-section">
+        <h2>timer</h2>
       </section>
-      <section id="contact" class="test-section">
-        <h2>contact</h2>
+      <!-- end single item -->
+      <!-- single item -->
+      <section id="modal" class="test-section">
+        <h2>modal</h2>
       </section>
+      <!-- end single item -->
+      <!-- single item -->
+      <section id="tabs" class="test-section">
+        <h2>tabs</h2>
+      </section>
+      <!-- end single item -->
+      <!-- single item -->
+      <section id="faq" class="test-section">
+        <h2>faq</h2>
+      </section>
+      <!-- end single item -->
+      <!-- single item -->
+      <section id="reviews" class="test-section">
+        <h2>reviews</h2>
+      </section>
+      <!-- end single item -->
+      <!-- single item -->
+      <section id="dynamic" class="test-section">
+        <h2>dynamic</h2>
+      </section>
+      <!-- end single item -->
     </main>
     <footer></footer>
     <a class="top-link" href="#home">
       <i class="fas fa-arrow-up"></i>
     </a>
     <script src="nav.js"></script>
+    <script src="video.js"></script>
   </body>
 </html>
