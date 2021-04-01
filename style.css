@@ -257,10 +257,8 @@ header nav {
 
 /* switch button */
 
-.switch-btn {
-  display: none;
-}
-@media screen and (min-width: 1025px) {
+
+
   .switch-btn {
     position: absolute;
     bottom: 7%;
@@ -296,7 +294,7 @@ header nav {
   .slide .switch {
     left: 50%;
   }
-}
+
 
 /* countdown timer */
 
