@@ -180,7 +180,7 @@ header nav {
 }
 
 /* banner */
-#home {
+/* #home {
   background: linear-gradient(rgba(49, 69, 84, 0.9), rgba(49, 69, 84, 0.9)),
     url(./Particle_Wave_4K_Motion_Background_Loop_Moment.jpg) no-repeat center
       center fixed;
@@ -189,7 +189,7 @@ header nav {
   -o-background-size: cover;
   background-size: cover;
   background-color: rgba(49, 69, 84, 0.8);
-}
+} */
 
 .banner {
   min-height: 100vh;
@@ -225,11 +225,8 @@ header nav {
   background-color: rgba(255, 255, 255, 0.25);
 }
 
-.video-container {
-  display: none;
-}
 
-@media screen and (min-width: 1025px) {
+/* @media screen and (min-width: 1025px) { */
   #home {
     background: none;
   }
@@ -243,7 +240,7 @@ header nav {
     object-fit: cover;
     z-index: -2;
   }
-}
+/* } */
 
 /* header after */
 .banner::after {
