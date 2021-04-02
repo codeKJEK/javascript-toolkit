@@ -1,0 +1,17 @@
+/* variable styles */
+:root {
+    --blue: #7bafd4;
+    --light-blue: #c1d0db;
+    --grey-blue: #4a5054;
+    --mid-blue: #5d85a1;
+    --dark-blue: #314554;
+    --white: #f2f2f2;
+    --black: #0d0d0d;
+    --black-50: #808080;
+    --spacing: 0.25rem;
+    --radius: 0.5rem;
+    --max-width: 1170px;
+    --transition: all 0.3s linear;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --font-primary: "Roboto", sans-serif;
+  }

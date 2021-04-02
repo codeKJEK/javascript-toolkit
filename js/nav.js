@@ -57,3 +57,10 @@ scrollLinks.forEach(function (link) {
     navContainer.style.height = 0;
   });
 });
+
+
+const docBody = document.getElementsByTagName("body");
+
+docBody.addEventListener("click", function(e) {
+  console.log(e.currentTarget)
+}) 
