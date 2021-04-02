@@ -3,9 +3,57 @@
 img {
     width: 100%;
   }
-  
-  @media screen and (min-width: 992px) {
-    .section-center {
+
+.timer-section {
+  padding: 3rem 2rem;
+  border-bottom: 1px solid var(--dark-blue);
+}
+
+.deal-info h3 {
+  margin: 1rem 0 0 0;
+}
+
+.deal-info h4 {
+  font-size: 1.25em;
+  margin: .5rem 0;
+  color: var(--mid-blue);
+}
+
+.deal-info p {
+  color: var(--dark-blue);
+}
+
+.deadline-format h4 {
+  color: var(--white);
+}
+
+.deadline {
+  display: flex;
+}
+
+.deadline-format {
+  background: var(--dark-blue);
+  color: var(--white);
+  margin-right: 1rem;
+  width: 5rem;
+  height: 5rem;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.deadline-format h4 {
+  margin-top: .25rem;
+}
+.deadline-format span {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+}
+
+@media screen and (min-width: 850px) {
+    .timer-article {
       display: grid;
       grid-template-columns: 1fr 1fr;
       place-items: center;
@@ -14,25 +62,4 @@ img {
     .gift-img {
       margin-bottom: 0;
     }
-  }
-  
-  .deadline {
-    display: flex;
-  }
-  
-  .deadline-format {
-    background: var(--dark-blue);
-    color: var(--white);
-    margin-right: 1rem;
-    width: 5rem;
-    height: 5rem;
-    display: grid;
-    place-items: center;
-    text-align: center;
-  }
-  .deadline-format span {
-    display: block;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 0.85rem;
   }
