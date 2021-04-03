@@ -156,7 +156,7 @@ const months = [
   const date = futureDate.getDate();
   const weekday = weekdays[futureDate.getDay()];
   
-  giveaway.textContent = `giveaway ends on ${weekday} ${month} ${date} ${year} ${format(
+  giveaway.textContent = `offer ends on ${weekday} ${month} ${date} ${year} ${format(
     hours
   )}:${format(minutes)}pm`;
   

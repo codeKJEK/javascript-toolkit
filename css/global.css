@@ -18,6 +18,11 @@ main {
   display: block;
 }
 
+img:not(.logo-img) {
+  width: 100%;
+}
+
+
 h1 {
   font-size: 2.986em;
   margin: 0.67em 0;
@@ -25,7 +30,7 @@ h1 {
 
 h2 {
   font-size: 2.488em;
-  }
+}
 
 h3 {
   font-size: 2.074em;
@@ -43,11 +48,15 @@ h6 {
   font-size: 1.2em;
 }
 
-h1, h2 {
+h1,
+h2 {
   text-transform: uppercase;
 }
 
-h3, h4, h5, h6 {
+h3,
+h4,
+h5,
+h6 {
   text-transform: capitalize;
 }
 
@@ -73,71 +82,71 @@ figure {
 }
 /* global classes */
 .skip-btn {
-    height: 0;
-    overflow: hidden;
-    display: block;
-  }
-  
-  .skip-btn:focus {
-    height: min-content;
-  }
-  
-  .container {
-    padding: 1rem 2rem;
-  }
-  
-  @media screen and (min-width: 800px) {
-    .container {
-      max-width: 1170px;
-      margin: 0 auto;
-    }
-  }
-  
-  .list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .test-section {
-    min-height: 100vh;
-  }
-  
-  .preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: var(--dark-blue);
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    visibility: visible;
-    z-index: 999;
-    transition: var(--transition);
-  }
-  .hide-preloader {
-    z-index: -999;
-    visibility: hidden;
-  }
-  
+  height: 0;
+  overflow: hidden;
+  display: block;
+}
 
-  .card {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);;
-    margin-bottom: 3rem;
-    padding: 5rem 1rem;
-    text-align: center;
-  }
+.skip-btn:focus {
+  height: min-content;
+}
 
-  .card h2 {
-    margin: 0 0 1rem 0;
-  }
 
-  .card h2 span {
-    color: var(--mid-blue);
-  }
-  .card p {
-    margin: 0;
-  }
+.global-section {
+  padding: 3rem 2rem 4rem 2rem;
+  border-bottom: 1px solid var(--dark-blue);
+}
 
+@media screen and (min-width: 800px) {
+  .global-section {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.test-section {
+  min-height: 100vh;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--dark-blue);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
+  z-index: 999;
+  transition: var(--transition);
+}
+.hide-preloader {
+  z-index: -999;
+  visibility: hidden;
+}
+
+.card {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+  margin-bottom: 3rem;
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+}
+
+.card h2 span {
+  color: var(--mid-blue);
+}
+.card p {
+  margin: 0;
+}
