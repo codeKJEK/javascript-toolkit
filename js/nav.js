@@ -1,4 +1,7 @@
+// ===============================
 // ********* toggle menu *********
+// ===============================
+
 const menuBtn = document.querySelector(".toggle-menu");
 const navContainer = document.querySelector(".nav-container");
 const navList = document.querySelector(".nav-list");
@@ -9,14 +12,33 @@ menuBtn.addEventListener("click", function () {
   if (containerHeight === 0) {
     navContainer.style.height = `${listHeight + 2}px`;
       } else {
+        navContainer.style.height = 0;
+  }
+});
+
+// close on click
+const navbar = document.getElementById("nav");
+
+window.addEventListener("click", function(e) {
+  const containerHeight = navContainer.getBoundingClientRect().height;
+  console.log(containerHeight)
+  if(!navbar.contains(e.target) && containerHeight > 0) {
     navContainer.style.height = 0;
   }
 });
 
-// ********* fixed nav *********
-const navbar = document.getElementById("nav");
+// close on scroll 
+
+
+// ===============================
+// ********* fixed nav ***********
+// ===============================
 
 window.addEventListener("scroll", function () {
+  const containerHeight = navContainer.getBoundingClientRect().height;
+if(containerHeight > 0) {
+  navContainer.style.height = 0;
+}
   const scrollHeight = window.pageYOffset;
   const navHeight = navbar.getBoundingClientRect().height;
   if (scrollHeight > navHeight) {
@@ -26,7 +48,9 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// ********* smooth scroll *********
+// ===============================
+// ********* smooth scroll *******
+// ===============================
 
 const scrollLinks = document.querySelectorAll(".scroll-link");
 scrollLinks.forEach(function (link) {
@@ -57,10 +81,3 @@ scrollLinks.forEach(function (link) {
     navContainer.style.height = 0;
   });
 });
-
-
-const docBody = document.getElementsByTagName("body");
-
-docBody.addEventListener("click", function(e) {
-  console.log(e.currentTarget)
-}) 
